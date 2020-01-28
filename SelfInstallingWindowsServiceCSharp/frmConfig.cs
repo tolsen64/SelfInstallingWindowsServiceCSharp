@@ -30,6 +30,7 @@ namespace SelfInstallingWindowsServiceCSharp
                     sc = svc;
                     if (sc.Status == ServiceControllerStatus.Running)
                     {
+                        lblRunStatus.Text = "Running";
                         itmStartStopService.Text = "Stop Service";
                         itmInstallUninstallService.Enabled = false;
                     }
